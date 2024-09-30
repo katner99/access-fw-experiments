@@ -1,0 +1,1123 @@
+&nsubmodl
+    n_internal_model = 1
+    internal_model_list = 1
+    submodel_for_im = 1
+/
+
+&nlsizes
+    pp_len_inthd = 46
+    pp_len_realhd = 38
+    cloud_levels = 38
+    land_field = 10865
+    model_levels = 38
+    wet_levels = 38
+    global_row_length = 192
+    global_rows = 145
+    rimwidtha = 1
+    nrim_timesa = 1
+    tr_levels = 38
+    tr_vars = 2
+    n_intf_a = 0
+    st_levels = 6
+    sm_levels = 6
+    bl_levels = 12
+    ozone_levels = 38
+    a_len_inthd = 46
+    a_len_realhd = 38
+    a_len2_levdepc = 8
+    a_len2_rowdepc = 0
+    a_len2_coldepc = 0
+    a_len2_flddepc = 0
+    a_len_extcnst = 0
+    nancil_lookupsa = 100000
+    theta_pv_p_levs = 18
+    ntiles = 17
+    n_aobs = 0
+    a_len_cfi1 = 0
+    a_len_cfi2 = 0
+    a_len_cfi3 = 0
+    tr_ukca = 0
+    river_row_length = 360
+    river_rows = 180
+    nice = 5
+/
+
+&stshcomp
+    run_target_end = 0, 0, 1, 0, 0, 0
+    ocaaa = 1
+    indep_sr = '1A', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ',
+               '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '0A',
+               '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ',
+               '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ',
+               '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ',
+               '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ',
+               '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ',
+               '1A', '1A', '0A', '  ', '  ', '  ', '  ', '  ', '  ', '  ',
+               '1A', '  ', '1A', '  ', '1A', '  ', '  ', '1A', '  ', '  ',
+               '  ', '0A', '2A', '0A', '1A', '2A', '1C', '3A', '  ', '0A'
+    swbnd = 6
+    lwbnd = 9
+    swinc = 8
+    lwinc = 8
+    orogr = 'Y'
+    swmcr = 'Y'
+    atmos_sr = '  ', '3A', '3A', '8C', '3D', '4A', '4A', '  ', '7A', '2A',
+               '2A', '2A', '2A', '2A', '1B', '1A', '1A', '2B', '0A', '1A',
+               '1A', '1A', '1A', '1A', '1A', '0A', '1A', '  ', '  ', '  ',
+               '1A', '0A', '1A', '1A', '0A', '0A', '0A', '0A', '0A', '  ',
+               '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ',
+               '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ',
+               '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ',
+               '1B', '1A', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ',
+               '  ', '  ', '  ', '  ', '  ', '  ', '  ', '0A'
+    zonavozone = .true.
+    ocalb = 1
+    floor = 'N'
+    totae = 'N'
+    totem = 'N'
+    tca = 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0
+    tc_ukca = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    sstanom = 'N'
+    aobinc = 0
+    aobgrp = 0
+/
+
+&nlstcall
+    expt_id = 'aiih'
+    job_id = 'c'
+    expt_id_in = '    '
+    job_id_in = ' '
+    expt_alias = 'ALIAS   '
+    run_resubmit_inc = 0, 0, 1, 0, 0, 0
+    model_status = 'NonOperational'
+    model_basis_time = 101, 1, 1, 0, 0, 0
+    ancil_reftime = 101, 1, 1, 0, 0, 0
+    run_target_end = 0, 0, 1, 0, 0, 0
+    lclimrealyr = .false.
+    lcal360 = .false.
+    ltimer = .true.
+    l_io_timer = .true.
+    time_convention = 'Absolute_standard'
+    model_analysis_mins = 0
+    model_assim_mode = 'None      '
+    run_assim_mode = 'None      '
+    control_resubmit = 'Y'
+    model_hrs_per_group = 0
+    ft_plotsel = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    ft_wssend = 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N'
+    pp_pack_code = 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                   1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                   1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1,
+                   1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1,
+                   1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                   1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                   1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                   1, 1, 1, 1, 0, 1
+    pp_len2_look = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 100000, 100000, 100000, 100000, 100000, 100000,
+                   100000, 100000, 100000, 100000, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0
+    lrle = .false.
+    type_letter_1 = 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p',
+                    'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p',
+                    'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p',
+                    'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p',
+                    'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p',
+                    'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p',
+                    'p', 'p', 'p', 'p', 'b', 'p', 'p', 'p', 'p', 'p', 'p',
+                    'p', 'p', 'p', 'b', 'b', 'b', 'b', 'p', 'p', 'p', 'p',
+                    'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p',
+                    'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p',
+                    'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'b',
+                    'b', 'b', 'b', 'b', 'b', 'b', 'b', 'p', 'p', 'c', 'p'
+    type_letter_3 = ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'a', 'b', 'c', 'd',
+                    'e', 'f', 'g', 'h', 'i', 'j', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', 'a', 'b', 'c', 'd', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'a',
+                    'b', 'c', 'd', 'e', 'f', 'g', 'h', ' ', ' ', 'a', 'k'
+    ft_input = 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+               'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+               'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+               'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+               'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+               'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+               'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+               'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+               'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+               'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+               'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N'
+    ft_steps = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+               0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+               0, 0, -1, 0, -3, 0, -1, 1440, -1, 0, -1, -1, 0, 0, 0, 0,
+               0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+               0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+               0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+               0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+               0, 0
+    ft_select = 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N'
+    ft_archsel = 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+                 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N'
+    ft_firststep = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 0
+    ft_laststep = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                  0, 0, 0, 0, -1, 0, -1, 0, -1, -48, -1, 0, -1, -1, 0, 0,
+                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                  0, 0, 0, 0, 0, 0, 0, 0
+    type_letter_2 = ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'a', ' ', 'a', ' ',
+                    'a', 'a', 'a', ' ', ' ', 'a', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                    ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '
+    num_albcs = ,
+/
+
+&nlstwritedata
+    l_writ_init = .false.
+    t_writd1_start = 0
+    t_writd1_end = 0
+    t_writd1_int = 0
+    peer_vn = 1
+    l_peer = .false.
+/
+
+&nlstcgen
+    steps_per_periodim = 48, 0, 0, 0
+    secs_per_periodim = 86400, 0, 0, 0
+    exitfreqim = 48, 0, 0, 0
+    dumpfreqim = -9999, 0, 0, 0
+    archdump_offsetim = 0, 0, 0, 0
+    archdump_freqim = 0, 0, 0, 0
+    dumptimesim = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    ppselectim = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    plotselim = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    meanwsim = 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N',
+               'N', 'N', 'N', 'N'
+    archppselim = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    meanarchim = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    meanfreqim = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    printfreqim = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                  0
+    mean_reftimeim = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 0, 0, 0, 0
+    jobrel_stepim = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0
+    dump_packim = 3, 0, 0, 0
+    pp_len2_meanim = 500000, 500000, 500000, 500000, 500000, 500000, 500000,
+                     500000, 500000, 500000, 500000, 500000, 500000, 500000,
+                     500000, 500000
+    ft_meanim = 27, 27, 27, 27
+    llboutim = .false.
+/
+
+&nlst_mpp
+    extended_halo_size_ew = 4
+    extended_halo_size_ns = 5
+    gcom_coll_limit = 64
+/
+
+&bouncnst
+    bound_fieldcode = 0, 0, 0, 0
+/
+
+&nlstcatm
+    model_domain = 1
+    l_snow_albedo = .false.
+    l_ssice_albedo = .true.
+    l_sice_meltponds = .true.
+    l_sice_scattering = .true.
+    l_sice_hadgem1a = .true.
+    a_sw_radstep = 6
+    a_lw_radstep = 6
+    l_rad_deg = .false.
+    l_mod_barker_albedo = .true.
+    l_use_spec_sea = .true.
+    l_sice_heatflux = .true.
+    l_murk = .false.
+    l_murk_source = .false.
+    l_murk_advect = .false.
+    l_murk_bdry = .false.
+    l_murk_rad = .false.
+    l_bl_tracer_mix = .true.
+    l_microphy = .true.
+    l_sulpc_so2 = .true.
+    l_soot = .true.
+    call_chem_freq = 1
+    l_so2_surfem = .true.
+    l_so2_hilem = .true.
+    l_so2_natem = .true.
+    l_sulpc_dms = .true.
+    l_dms_em = .true.
+    l_dms_em_inter = .true.
+    l_dms_ointer = .false.
+    l_dms_liss_merlivat = .false.
+    l_dms_wanninkhof = .true.
+    l_dms_nightingale = .false.
+    l_sulpc_ozone = .true.
+    l_sulpc_online_oxidants = .false.
+    l_sulpc_nh3 = .true.
+    l_use_sulpc_direct = .true.
+    l_nh3_em = .false.
+    l_sulpc_so2_o3_nonbuffered = .true.
+    l_use_sulpc_indirect_sw = .true.
+    l_use_sulpc_indirect_lw = .true.
+    l_use_sulphate_autoconv = .true.
+    l_use_sulphate_sulpc = .true.
+    l_use_seasalt_indirect = .true.
+    l_use_seasalt_autoconv = .true.
+    l_use_seasalt_sulpc = .true.
+    l_use_seasalt_direct = .true.
+    l_soot_surem = .false.
+    l_soot_hilem = .true.
+    l_use_soot_direct = .true.
+    l_use_soot_indirect = .false.
+    l_use_soot_autoconv = .false.
+    l_use_soot_sulpc = .false.
+    l_biomass = .true.
+    l_bmass_surem = .true.
+    l_bmass_hilem = .true.
+    l_use_bmass_direct = .true.
+    l_use_bmass_indirect = .true.
+    l_use_bmass_autoconv = .true.
+    l_use_bmass_sulpc = .true.
+    l_use_biogenic = .true.
+    l_use_arclbiom = .false.
+    l_use_arclblck = .false.
+    l_use_arclsslt = .false.
+    l_use_arclsulp = .false.
+    l_use_arcldust = .false.
+    l_use_arclocff = .false.
+    l_use_arcldlta = .false.
+    l_ocff = .true.
+    l_ocff_surem = .false.
+    l_ocff_hilem = .true.
+    l_use_ocff_direct = .true.
+    l_use_ocff_indirect = .true.
+    l_use_ocff_autoconv = .true.
+    l_use_ocff_sulpc = .true.
+    l_dust = .true.
+    l_use_dust = .true.
+    l_cam_dust = .false.
+    l_use_stochem_ch4 = .false.
+    l_use_stochem_o3 = .false.
+    h_swbands = 6
+    h_lwbands = 9
+    l_cld_area = .true.
+    l_acf_cusack = .true.
+    l_acf_brooks = .false.
+    l_pc2 = .true.
+    l_pc2_reset = .false.
+    l_pc2_diag_sh = .false.
+    l_vint_tp = .false.
+    npmsl_height = 500.0
+    l_emcorr = .true.
+    lmass_corr = .true.
+    lqt_corr = .false.
+    lemq_print = .true.
+    a_energysteps = 48
+    l_rhcpt = .true.
+    l_auto_debias = .true.
+    l_3d_cca = .true.
+    l_phase_lim = .true.
+    l_co2_interactive = .false.
+    l_co2_emits = .false.
+    l_co2_tracer = .true.
+    l_tracer_mass = .true.
+    i_tracermass_start = 1
+    l_cable = .true.
+    l_q10 = .true.
+    l_veg_fracs = .true.
+    l_triffid = .false.
+    l_phenol = .false.
+    l_trif_eq = .false.
+    l_nrun_mid_trif = .false.
+    phenol_period = 0
+    triffid_period = 0
+    l_disturb = .false.
+    can_model = 3
+    l_ctile = .true.
+    a_assim_mode = 'AC'
+    l_neg_tstar = .false.
+    problem_number = 0
+    l_use_methox = .false.
+    l_upper_stratq = .false.
+    l_gwd = .true.
+    l_use_ussp = .false.
+    l_rivers = .true.
+    l_inland = .true.
+    river_step = 10800
+    l_mcr_qcf2 = .false.
+    l_mcr_qrain = .false.
+    l_mcr_qgraup = .false.
+    l_mcr_qcf2_lbc = .false.
+    l_mcr_qrain_lbc = .false.
+    l_mcr_qgraup_lbc = .false.
+    l_pc2_lbc = .false.
+    l_murk_lbc = .false.
+    l_int_uvw_lbc = .false.
+    l_top = .false.
+    l_pdm = .false.
+    l_use_tpps_ozone = .false.
+    i_ozone_int = 5
+    l_radiation = .true.
+    l_rain = .true.
+    l_mr_physics1 = .false.
+    l_bl = .true.
+    l_hydrology = .true.
+    l_soil_sat_down = .true.
+    l_scvary = .false.
+    l_volcts = .true.
+    l_anthrop_heat_src = .false.
+    l_icount = .false.
+    l_ukca = .false.
+    l_radiance = .false.
+    l_inhom_cloud = .false.
+    l_use_orog_corr = .false.
+    l_use_grad_corr = .false.
+    l_use_aod = .true.
+    l_use_clearrh = .true.
+    l_mod_k_flux = .true.
+    l_ctile_fix = .true.
+    l_wenyi = .true.
+    l_ccrad = .false.
+    l_3d_ccw = .false.
+    l_use_cariolle = .false.
+    l_use_ozoneinrad = .false.
+    l_quad_src_fix = .true.
+    l_oasis = .true.
+    l_couple_master = .false.
+    oasis_couple_freq = 3
+/
+
+&run_tfilt
+    l_iau = .false.
+    l_tdf = .false.
+/
+
+&run_bl
+    formdrag = 1
+    l_use_bl_diag_term = .false.
+    alpha_cd = 2.0, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5
+    l_sbleq = .false.
+    sbl_op = 1
+    ishear_bl = 1
+    ng_stress = 2
+    par_mezcla_max = 0.5
+    par_mezcla = 0.15
+    par_mezcla_min = 0.005
+    g0_max = 20.0
+    g0_rp = 10.0
+    g0_min = 5.0
+    seasalinityfactor = 0.98
+    iseaz0t = 1
+    iseadyndiag = 1
+    cor_ust = 1
+    trweights1 = 1
+    stopwe_sbl = 1
+    decfix = 1
+    l_lambdam2 = .false.
+    l_full_lambdas = .false.
+    charnock_max = 0.026
+    charnock = 0.018
+    charnock_min = 0.01
+    l_emis_land_gen = .false.
+    emis_land_gen = 1.0
+    flux_grad = 0
+    l_us_blsol = .false.
+    pstb = 1.5
+    puns = 0.5
+    non_local_bl = 1
+    local_fa = 2
+    buddy_sea = 1
+    i_scrn_t_diag = 0
+    orog_drag_param = 0.3
+    fd_stab_dep = 0
+    keep_ri_fa = 0
+    nl_bl_levels = 12
+    cor_mo_iter = 0
+/
+
+&run_blice
+    z0hsea = 4e-05
+    z0miz = 0.0005
+    z0sice = 0.0005
+/
+
+&run_blveg
+    albsnc_nvg = 0.8, 0.4, 0.8, 0.8
+    albsnf_nvg = -1.0, 0.18, 0.06, 0.75
+    catch_nvg = 0.0, 0.5, 0.0, 0.0
+    gs_nvg = 0.01, 0.0, 0.0, 1000000.0
+    infil_nvg = 0.5, 0.1, 0.0, 0.0
+    rootd_nvg = 0.1, 0.5, 1.0, 0.0
+    z0_nvg = 0.0003, 1.0, 0.0003, 0.01
+    ch_nvg = 0.0, 280000.0, 0.0, 0.0
+    vf_nvg = 0.0, 1.0, 0.0, 0.0
+    can_rad_mod = 1
+    ilayers = 10
+/
+
+&run_pft
+    albsnc_max = 0.25, 0.25, 0.6, 0.6, 0.4, 0.25, 0.25, 0.6, 0.6, 0.4, 0.4,
+                 0.0, 0.0
+    albsnc_min = 0.3, 0.3, 0.8, 0.8, 0.8, 0.3, 0.3, 0.8, 0.8, 0.8, 0.8,
+                 0.0, 0.0
+    albsnf_max = 0.15, 0.15, 0.2, 0.2, 0.2, 0.15, 0.15, 0.2, 0.2, 0.2, 0.2,
+                 0.0, 0.0
+    dz0v_dh = 0.05, 0.05, 0.1, 0.1, 0.1, 0.05, 0.05, 0.1, 0.1, 0.1, 0.1,
+              0.0, 0.0
+    catch0 = 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.0,
+             0.0
+    dcatch_dlai = 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05,
+                  0.05, 0.05, 0.0, 0.0
+    infil_f = 4.0, 4.0, 2.0, 2.0, 2.0, 4.0, 4.0, 2.0, 2.0, 0.2, 0.2, 0.0,
+              0.0
+    kext = 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.0, 0.0
+    rootd_ft = 3.0, 1.0, 0.5, 0.5, 0.5, 3.0, 1.0, 0.5, 0.5, 0.5, 0.5, 0.0,
+               0.0
+/
+
+&run_land
+    frac_snow_subl_melt = 1
+    maskd = 0.2
+    soilhc_method = 2
+    l_vg_soil = .true.
+    all_tiles = 0
+/
+
+&run_precip
+    rhcrit = 0.95, 0.925, 0.9, 0.9, 0.9, 0.9, 0.85, 0.85, 0.85, 0.8, 0.8,
+             0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8,
+             0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8,
+             0.8, 0.8, 0.8
+    l_it_melting = .false.
+    l_seq_mcr = .true.
+    l_autoc_3b = .false.
+    l_autolim_3b = .false.
+    l_autoconv_murk = .false.
+    ec_auto = 0.425
+    n_drop_land = 300000000.0
+    n_drop_sea = 100000000.0
+    x1r = 26.2
+    x2r = 1.57
+    x4r = 0.0
+    n_drop_land_cr = 0.00118563
+    n_drop_sea_cr = 0.00188207
+    ntot_land = 300000000.0
+    ntot_sea = 100000000.0
+    x1i = 4000000.0
+    x1ic = 80000000.0
+    l_psd = .false.
+    ai = 0.0444
+    bi = 2.1
+    aic = 0.587
+    bic = 2.45
+    lsp_ei = 0.2072
+    lsp_fi = 0.638
+    lsp_eic = 0.2072
+    lsp_fic = 0.638
+    l_cry_agg_dep = .false.
+    rhcrit_max = 0.91
+    rhcrit_min = 0.875
+    ci_max = 33.0
+    ci_min = 17.0
+    m_ci_max = 1.4
+    m_ci = 1.0
+    m_ci_min = 0.6
+    l_droplet_settle = .false.
+/
+
+&run_cloud
+    l_eacf = .true.
+    cloud_fraction_method = 2
+    overlap_ice_liquid = -1.0
+    ice_fraction_method = 2
+    ctt_weight = 0.333
+    t_weight = 0.333
+    qsat_fixed = 0.0001
+    sub_cld = 0.15
+    dbsdtbs_turb_0 = -4.5e-05
+/
+
+&run_convection
+    l_mom = .true.
+    l_conv4a = .true.
+    l_cape = .true.
+    l_sdxs = .false.
+    l_xscomp = .true.
+    deep_cmt_opt = 1
+    mid_cmt_opt = 0
+    dd_opt = 1
+    ccw_for_precip_opt = 2
+    icvdiag = 1
+    mid_cnv_pmin = 10000.0
+    bl_cnv_mix = 0
+    l4a_kterm = .true.
+    l_ccw = .true.
+    l_cloud_deep = .true.
+    a_convect_segments = -99
+    a_convect_seg_size = 80
+    mparwtr = 0.001
+    anvil_factor = 0.0
+    tower_factor = 0.0
+    ud_factor = 0.12
+    n_conv_calls = 3
+    cape_timescale = 3600
+    cape_opt = 1
+    adapt = 6
+    r_det = 0.5
+    cape_ts_w = 0.0
+    cape_min = 0.5
+    w_cape_limit = 10000.0
+    cape_bottom = 5
+    cape_top = 30
+    convection_option = 3
+    tice = 263.15
+    qstice = 0.0035
+    l_convcld_hadgem1 = .true.
+    l_no_dcrit = .true.
+    l_eman_dd = .false.
+    l_fix_udfactor = .true.
+    rad_cloud_decay_opt = 1
+    sh_pert_opt = 1
+    termconv = 1
+    fixed_cld_life = 7200.0
+    cca_min = 0.02
+    anv_opt = 2
+    cca2d_sh_opt = 1
+    cca2d_dp_opt = 1
+    cca2d_md_opt = 1
+    cca_sh_knob = 1.0
+    cca_dp_knob = 1.0
+    cca_md_knob = 1.0
+    ccw_sh_knob = 1.0
+    ccw_dp_knob = 1.0
+    ccw_md_knob = 1.0
+    cld_life_opt = 0
+    iconv_shallow = 1
+    iconv_congestus = 0
+    iconv_deep = 1
+    iconv_mid = 1
+    cape_timescale_max = 3600.0
+    cape_timescale_min = 1800.0
+    entcoef_max = 4.0
+    entcoef_min = 2.75
+    l_rp = .false.
+    l_rp2 = .false.
+    l_scv = .false.
+/
+
+&run_radiation
+    l_climat_aerosol = .true.
+    l_hadgem1_clim_aero = .true.
+    fw_std = 0.725
+    inhom_cloud_sw = 1.0, 1.0, 1.0, 1.0
+    inhom_cloud_lw = 1.0, 1.0, 1.0, 1.0
+    alphab = 0.68
+    alphac = 0.84
+    alpham = 0.72
+    dtice = 0.5
+    dt_bare = 0.25
+    dalb_bare_wet = -0.075
+    pen_rad_frac = 0.17
+    sw_beta = 0.4
+    a_sw_segments = -99
+    a_sw_seg_size = 80
+    a_lw_segments = -99
+    a_lw_seg_size = 80
+    l_eqt = .true.
+    l_sec_var = .false.
+    l_clim_aero_hgt = .false.
+    aero_bl_levels = 12
+    co2_mmr = 0.0004314801
+    o2mmr = 0.2314
+    n2ommr = 4.143596e-07
+    ch4mmr = 4.470459e-07
+    c11mmr = 0.0
+    c12mmr = 0.0
+    c113mmr = 0.0
+    hcfc22mmr = 0.0
+    hfc125mmr = 0.0
+    hfc134ammr = 0.0
+    is_ncol = 25
+    l_cldtop_t_fix = .false.
+/
+
+&run_gwd
+    kay_gwave = 3300.0
+    gwd_frc = 4.0
+    sat_scheme = 0
+    gwd_fsat = 1.0
+    gwd_frc_max = 4.0
+    gwd_frc_min = 2.0
+    kay_gwave_max = 133000.0
+    kay_gwave_min = 75000.0
+    l_fix_gwsatn = .true.
+    l_gwd_40km = .true.
+/
+
+&run_aerosol
+    so2_high_level = 5
+    soot_high_level = 2
+    bmass_high_level_1 = 2
+    bmass_high_level_2 = 12
+    ocff_high_level = 2
+    l_tracer1_non_hydro = .false.
+/
+
+&run_ukca
+    l_ukca_family = .false.
+    l_ukca_advh2o = .false.
+    l_ukca_phot2d = .false.
+    l_ukca_fastj = .false.
+    l_ukca_chem = .false.
+    l_ukca_strat = .false.
+    l_ukca_wachem = .false.
+    l_ukca_trop = .false.
+    l_ukca_tropisop = .false.
+    l_ukca_strattrop = .false.
+    l_ukca_stratcfc = .false.
+    l_ukca_aerchem = .false.
+    l_ukca_user = .false.
+    l_ukca_mode = .false.
+    l_ukca_dust = .false.
+    l_ukca_rnpb = .false.
+    l_ukca_o3budget = .false.
+    l_ukca_qch4inter = .false.
+    l_ukca_isopinter = .false.
+    l_ukca_terpinter = .false.
+    l_ukca_budget2 = .false.
+    l_ukca_qf11f12mbr = .false.
+    l_ukca_useumuivals = .false.
+    l_ukca_nat_sedi = .false.
+    l_ukca_het_psc = .false.
+    l_ukca_h2o_feedback = .false.
+    l_ukca_clbrcons = .false.
+    l_ukca_usero3 = .false.
+    l_ukca_useco3 = .false.
+    l_ukca_userelaxo3 = .false.
+    l_ukca_rado3 = .false.
+    l_ukca_radch4 = .false.
+    l_ukca_radn2o = .false.
+    l_ukca_radf11 = .false.
+    l_ukca_radf12 = .false.
+    l_ukca_radf113 = .false.
+    l_ukca_radf22 = .false.
+    l_ukca_radch2o = .false.
+    l_ukca_useoxid = .false.
+    l_ukca_intdd = .false.
+    jpctr = 0
+    jpspec = 0
+    jpbk = 0
+    jptk = 0
+    jppj = 0
+    jphk = 0
+    jpnr = 0
+    jpdd = 0
+    jpdw = 0
+    jpeq = 0
+/
+
+&run_dyn
+    l_primitive = .true.
+    l_dry = .false.
+    l_free_slip = .false.
+    l_adjust_wet = .false.
+    l_perturb_ic_theta = .false.
+    l_physics = .true.
+    intrand_seed = 0
+    l_phys2_substep = .false.
+    l_backwards = .false.
+    l_interp_depart = .false.
+    alpha_1 = 0.6
+    alpha_2 = 1.0
+    alpha_3 = 0.6
+    alpha_4 = 1.0
+    alpha_1_2 = 0.6
+    alpha_2_2 = 1.0
+    alpha_3_2 = 0.6
+    alpha_4_2 = 1.0
+    num_substeps = 1
+    l_new_tdisc = .false.
+    numcycles = 1
+    extrp_weight = 1.5
+    gcr_use_tol_abs = .true.
+    gcr_use_residual_tol = .false.
+    gcr_tol_res = 0.0
+    gcr_tol_abs = 0.01
+    gcr_zero_init_guess = .true.
+    l_gcr_cycle_opt = .true.
+    gcr_max_iterations = 50
+    gcr_diagnostics = 1
+    gcr_its_avg_step = 12, 24, 1440
+    gcr_precon_option = 4
+    gcr_adi_add_full_soln = .true.
+    l_gcr_fast_x = .false.
+    gcr_n_adi_pseudo_timesteps = 1
+    gcr_adi_pseudo_timestep = 0.0025
+    gcr_restart_value = 2
+    g_term_tol = 0.9
+    l_mix_ratio = .false.
+    l_qwaterload = .false.
+    l_fint_theta = .false.
+    n_rims_to_do = 1
+    l_regular = .true.
+    l_lbc_balance = .false.
+    l_lbc_new = .false.
+    l_run_with_physics2 = .true.
+/
+
+&run_sl
+    l_conserv = .false., .true., .false., .false.
+    l_moist_nonhydro_conserve = .true.
+    l_mono = .false., .true., .false., .false.
+    l_high = .true., .true., .true., .false.
+    monotone_scheme = 0, 1, 0, 0
+    high_order_scheme = 3, 6, 3, 0
+    depart_scheme = 1
+    depart_order = 2
+    l_ritchie_mono = .true.
+    l_ritchie_high = .false.
+    ritchie_monotone_scheme = 1
+    ritchie_high_order_scheme = 0
+    interp_vertical_search_tol = 14
+    l_2d_sl_geometry = .true.
+    l_sl_halo_reprod = .false.
+    thmono_height = 500.0
+    l_conserve_tracers = .true.
+/
+
+&run_diffusion
+    l_diff_ctl = .true.
+    l_diffusion = .false.
+    l_cdiffusion = .false.
+    horizontal_level = 30
+    top_filt_start = 1000
+    top_filt_end = 1000
+    top_diff = 0.1
+    l_upper_ramp = .false.
+    l_vertical_diffusion = .false.
+    l_ramp = .false.
+    l_adjust_theta = .false.
+    adjust_theta_start = 1000
+    adjust_theta_end = 1000
+    l_vdiff_uv = .false.
+    vdiffuv_start = 1000
+    vdiffuv_end = 1000
+    vdiffuv_timescale = 1
+    vdiffuv_test = 100.0
+    l_sponge = .false.
+    sponge_ew = 0
+    sponge_ns = 0
+    sponge_power = 1
+    l_divdamp = .false.
+    div_damp_coefficient = -1.0
+    l_qpos = .true.
+    l_q_pos_local = .true.
+    qlimit = 1e-08
+    l_tardiff_q = .true.
+    tardiffq_factor = 0.1
+    w_conv_limit = 0.3
+    tardiffq_test = 5
+    tardiffq_start = 1
+    tardiffq_end = 38
+    tar_horizontal = 20
+    l_diag_print = .true.
+    l_diag_print_ops = .false.
+    l_flush6 = .false.
+    l_print_pe = .false.
+    print_step = 24
+    diag_interval = 1
+    l_print_w = .true.
+    w_print_limit = 0.4
+    l_print_wmax = .true.
+    l_print_div = .false.
+    l_print_lapse = .false.
+    l_print_theta1 = .false.
+    l_print_max_wind = .false.
+    l_diag_wind = .false.
+    l_print_shear = .false.
+    l_diag_noise = .false.
+    l_diag_l2norms = .false.
+    l_diag_l2helm = .false.
+    norm_lev_start = 1
+    norm_lev_end = 38
+    l_polar_filter = .false.
+    l_polar_filter_incs = .false.
+    polar_filter_lat_limit = 0.0
+    polar_filter_north_lat_limit = 0.0
+    polar_filter_south_lat_limit = 0.0
+    polar_filter_n_sweeps = 0
+    polar_filter_coefficient = 0.0
+    polar_filter_step_per_sweep = 0
+    l_pofil_new = .true.
+    l_diff_auto = .true.
+    l_pftheta = .true.
+    l_pfuv = .true.
+    l_pfw = .true.
+    l_pfincs = .true.
+    l_diff_thermo = .false.
+    l_diff_wind = .false.
+    l_diff_w = .false.
+    l_diff_incs = .false.
+    diff_order_thermo = 0
+    diff_timescale_thermo = 0
+    diff_order_wind = 0
+    diff_timescale_wind = 0
+    diff_coeff_ref = 0.0
+    ref_lat_deg = 0.0
+    scale_ratio = 2.0
+    polar_cap = 85.0
+    max_sweeps = 8
+    l_pfexner = .true.
+    l_pofil_hadgem2 = .true.
+    first_norm_print = 1
+/
+
+&run_rivers
+    river_vel = 2.5
+    river_mcoef = 1.4
+/
+
+&radfcdia
+/
+
+&filenatforce
+    file_scvary = ''
+    file_volcts = 'INPUT/volcts_18502000ave.dat'
+/
+
+&pprintxn
+    lprvxn = .false.
+    lpprint = .false.
+    lprfld = .false.
+/
+
+&ancilcta
+    l_sstanom = .false.
+    lamipii = .false.
+/
+
+&upanca
+    anc_ref_no = 7
+    period = 2
+    interval = 1
+/
+
+&upanca
+    anc_ref_no = 208
+    period = 2
+    interval = 1
+/
+
+&upanca
+    anc_ref_no = 39
+    period = 3
+    interval = 5
+/
+
+&upanca
+    anc_ref_no = 40
+    period = 3
+    interval = 5
+/
+
+&upanca
+    anc_ref_no = 70
+    period = 3
+    interval = 5
+/
+
+&upanca
+    anc_ref_no = 73
+    period = 3
+    interval = 5
+/
+
+&upanca
+    anc_ref_no = 74
+    period = 3
+    interval = 5
+/
+
+&upanca
+    anc_ref_no = 75
+    period = 3
+    interval = 5
+/
+
+&upanca
+    anc_ref_no = 76
+    period = 3
+    interval = 5
+/
+
+&upanca
+    anc_ref_no = 77
+    period = 3
+    interval = 5
+/
+
+&upanca
+    anc_ref_no = 84
+    period = 3
+    interval = 5
+/
+
+&upanca
+    anc_ref_no = 85
+    period = 3
+    interval = 5
+/
+
+&upanca
+    anc_ref_no = 121
+    period = 3
+    interval = 5
+/
+
+&upanca
+    anc_ref_no = 122
+    period = 3
+    interval = 5
+/
+
+&upanca
+    anc_ref_no = 123
+    period = 3
+    interval = 5
+/
+
+&upanca
+    anc_ref_no = 157
+    period = 3
+    interval = 5
+/
+
+&upanca
+    anc_ref_no = 187
+    period = 3
+    interval = 5
+/
+
+&intfcnsta
+/
+
+&r2swncal
+/
+
+&r2swclnl
+    i_2stream_sw = 16
+    i_gas_overlap_sw = 5
+    i_cloud_sw = 6
+    i_cloud_representation_sw = 4
+    i_solver_sw = 14
+    l_local_cnv_partition_sw = .true.
+    l_o2_sw = .true.
+    i_st_water_sw = 5
+    i_cnv_water_sw = 5
+    i_st_ice_sw = 8
+    i_cnv_ice_sw = 8
+/
+
+&r2lwncal
+/
+
+&r2lwclnl
+    i_2stream_lw = 12
+    l_ir_source_quad_lw = .true.
+    i_gas_overlap_lw = 5
+    i_cloud_lw = 6
+    i_cloud_representation_lw = 4
+    i_solver_lw = 14
+    i_scatter_method_lw = 1
+    l_local_cnv_partition_lw = .true.
+    l_n2o_lw = .true.
+    l_ch4_lw = .true.
+    l_cfc11_lw = .true.
+    l_cfc12_lw = .true.
+    l_hcfc22_lw = .true.
+    l_cfc113_lw = .true.
+    l_hfc125_lw = .true.
+    l_hfc134a_lw = .true.
+    i_st_water_lw = 5
+    i_cnv_water_lw = 5
+    i_st_ice_lw = 8
+    i_cnv_ice_lw = 8
+    l_microphysics_lw = .true.
+/
+
+&clmchfcg
+    l_clmchfcg = .false.
+/
